@@ -9,6 +9,12 @@
     "preview": "vite preview",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
